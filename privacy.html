@@ -1,21 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Affiliate-Tool</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy – Holger Bentien Pin Scheduler</title>
+<meta name="description" content="Privacy policy of Holger Bentien Pin Scheduler, a private single-user tool that uses the Pinterest API.">
+<style>
+  :root { color-scheme: light dark; --fg:#1d2430; --bg:#ffffff; --muted:#5b6575; --line:#d9dee6; --accent:#0f766e; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e8ecf2; --bg:#12171f; --muted:#9aa5b5; --line:#2a3340; --accent:#5eead4; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+  h1 { font-size:1.8rem; margin:0 0 .25rem; } h2 { font-size:1.15rem; margin:2rem 0 .5rem; }
+  .muted { color:var(--muted); font-size:.95rem; } a { color:var(--accent); } ul { padding-left:1.2rem; }
+  hr { border:0; border-top:1px solid var(--line); margin:2rem 0; }
+</style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: October 2026</p>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="muted">Holger Bentien Pin Scheduler &middot; Last updated: 26 October 2026</p>
 
-    <h2>1. Overview</h2>
-    <p>This Privacy Policy applies to the "Affiliate-Tool" application. This tool is built exclusively for internal, personal use by the developer.</p>
+  <h2>1. Who is responsible</h2>
+  <p>
+    Holger Bentien<br>
+    E-mail: <a href="mailto:motivationmatrix2025@gmail.com">motivationmatrix2025@gmail.com</a>
+  </p>
 
-    <h2>2. Data Collection and Usage</h2>
-    <p>We do not collect, process, store, or share any personal data from external users. The application does not have a public registration or login feature for third parties.</p>
+  <h2>2. What this tool is</h2>
+  <p>Holger Bentien Pin Scheduler is a private, single-user web application that I operate on my own server. I use it to prepare, review and publish Pins to my own Pinterest account. It has no public registration and no accounts for third parties. This website only describes the tool; it does not use cookies, analytics, advertising or tracking.</p>
 
-    <h2>3. Contact</h2>
-    <p>As this is a private internal tool, no external user support or data inquiries are applicable. For administrative matters, contact the repository owner via GitHub.</p>
+  <h2>3. Data from the Pinterest API</h2>
+  <p>The tool acts only on my own Pinterest account, using an OAuth 2.0 access token issued by Pinterest, and uses the scopes <code>boards:read</code>, <code>pins:read</code> and <code>pins:write</code>. It processes:</p>
+  <ul>
+    <li><strong>OAuth tokens</strong> (access and refresh token) of my own account. They are stored encrypted on my own server and are used only to call the Pinterest API on my behalf.</li>
+    <li><strong>Board names and IDs</strong> of my own boards, so that I can choose where a Pin is published.</li>
+    <li><strong>IDs and status of Pins</strong> created by the tool, which are shown in my private dashboard and kept in a local publishing history.</li>
+  </ul>
+  <p>The tool does not access, collect or store data about other Pinterest users, their boards, Pins or accounts.</p>
+
+  <h2>4. What I do not do</h2>
+  <ul>
+    <li>I do not sell, rent, share or disclose data obtained through the Pinterest API to third parties.</li>
+    <li>I do not use Pinterest data for advertising, profiling, data brokering or to train machine-learning models.</li>
+    <li>I do not scrape Pinterest and do not use login credentials or session cookies to access it.</li>
+    <li>I do not automate follows, likes, comments or messages.</li>
+  </ul>
+
+  <h2>5. Other services</h2>
+  <p>To write Pin texts and create images, the tool may send the content of a draft (for example a product name and a short description) to AI and image services such as Anthropic (Claude) and fal.ai, and may fetch stock photos from Unsplash. Data obtained from the Pinterest API is not sent to these services.</p>
+
+  <h2>6. Retention and deletion</h2>
+  <ul>
+    <li>OAuth tokens are kept only while the Pinterest account is connected. They are deleted when I disconnect the account in the tool, and the app's access can be revoked at any time in the Pinterest account settings under "Apps".</li>
+    <li>The publishing history (Pin IDs, titles, dates) is kept for as long as I use the tool and can be deleted by me at any time.</li>
+    <li>If you believe the tool holds data about you, write to the e-mail address above and I will delete it.</li>
+  </ul>
+
+  <h2>7. Security</h2>
+  <p>The tool runs on a server under my control. Access is protected by a password, and secrets such as tokens are stored encrypted.</p>
+
+  <h2>8. Advertising disclosure</h2>
+  <p>Pins and posts created with this tool may contain affiliate links. They are labeled as advertising (<em>#ad</em> / <em>#Werbung</em>). If you buy through such a link, I may receive a commission at no extra cost to you.</p>
+
+  <h2>9. Your rights</h2>
+  <p>Under the GDPR you have the right to access, rectification, erasure, restriction and objection, and the right to lodge a complaint with a data protection authority. Please use the e-mail address above.</p>
+
+  <h2>10. Changes</h2>
+  <p>I may update this policy when the tool changes. The date at the top shows the latest version.</p>
+
+  <hr>
+  <p class="muted"><a href="index.html">Back to the overview</a> &middot; Pinterest is a trademark of Pinterest, Inc. This tool is not affiliated with or endorsed by Pinterest.</p>
+</main>
 </body>
 </html>

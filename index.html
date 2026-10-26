@@ -1,12 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Affiliate-Tool</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holger Bentien Pin Scheduler</title>
+<meta name="description" content="A private, single-user tool to prepare, review and publish my own Pins to my own Pinterest account.">
+<style>
+  :root { color-scheme: light dark; --fg:#1d2430; --bg:#ffffff; --muted:#5b6575; --line:#d9dee6; --accent:#0f766e; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e8ecf2; --bg:#12171f; --muted:#9aa5b5; --line:#2a3340; --accent:#5eead4; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+  h1 { font-size:1.8rem; margin:0 0 .25rem; } h2 { font-size:1.15rem; margin:2rem 0 .5rem; }
+  p, li { color:var(--fg); } .muted { color:var(--muted); font-size:.95rem; }
+  a { color:var(--accent); } ul { padding-left:1.2rem; } hr { border:0; border-top:1px solid var(--line); margin:2rem 0; }
+</style>
 </head>
 <body>
-    <h1>Affiliate-Tool</h1>
-    <p>This is an internal application used to automate the creation and scheduling of Pinterest pins for personal workflow. It is not intended for public use.</p>
+<main>
+  <h1>Holger Bentien Pin Scheduler</h1>
+  <p class="muted">A private, single-user tool for preparing and publishing my own Pins. Not a public service.</p>
+
+  <h2>What it is</h2>
+  <p>Holger Bentien Pin Scheduler is a web tool that I run on my own server. I use it to prepare Pins for my own Pinterest business account: an image, a title, a description and a link to a product page or a partner comparison page. Every Pin is reviewed and approved by me before it is published, and Pins are published at a low, rate-limited pace.</p>
+
+  <h2>How it uses the Pinterest API</h2>
+  <ul>
+    <li>It acts only on my own Pinterest account, using an OAuth 2.0 access token issued by Pinterest for that account.</li>
+    <li>Scopes: <code>boards:read</code> to list my boards, <code>pins:write</code> to create Pins on them and <code>pins:read</code> to show the status of Pins it created.</li>
+    <li>It does not access any data of other Pinterest users, does not scrape Pinterest, does not use login credentials or session cookies, and does not automate follows, likes, comments or messages.</li>
+    <li>Pins that contain affiliate links are labeled as advertising (<em>#ad</em> / <em>#Werbung</em>).</li>
+  </ul>
+
+  <h2>Who can use it</h2>
+  <p>Only I can. There is no public registration, no user accounts for third parties and no public interface. Because of this, the tool does not collect data from visitors. See the <a href="privacy.html">privacy policy</a> for details.</p>
+
+  <h2>Operator and contact</h2>
+  <p>
+    Holger Bentien<br>
+    E-mail: <a href="mailto:motivationmatrix2025@gmail.com">motivationmatrix2025@gmail.com</a>
+  </p>
+
+  <hr>
+  <p class="muted"><a href="privacy.html">Privacy policy</a> &middot; Pinterest is a trademark of Pinterest, Inc. This tool is not affiliated with or endorsed by Pinterest.</p>
+</main>
 </body>
 </html>
