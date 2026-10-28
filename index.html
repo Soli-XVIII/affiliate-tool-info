@@ -26,7 +26,7 @@
   <h2>How it uses the Pinterest API</h2>
   <ul>
     <li>It acts only on my own Pinterest account, using an OAuth 2.0 access token issued by Pinterest for that account.</li>
-    <li>Scopes: <code>boards:read</code> to list my boards, <code>pins:write</code> to create Pins on them and <code>pins:read</code> to show the status of Pins it created.</li>
+    <li>Scopes: <code>boards:read</code> to list my boards, <code>pins:write</code> (with <code>boards:write</code>, which Pinterest requires to create a Pin on a board) to create Pins on them and <code>pins:read</code> to show the status of Pins it created. The tool never creates, edits or deletes boards.</li>
     <li>It does not access any data of other Pinterest users, does not scrape Pinterest, does not use login credentials or session cookies, and does not automate follows, likes, comments or messages.</li>
     <li>Pins that contain affiliate links are labeled as advertising (<em>#ad</em> / <em>#Werbung</em>).</li>
   </ul>

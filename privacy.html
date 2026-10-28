@@ -30,7 +30,7 @@
   <p>Pin-Scheduler-AT is a private, single-user web application that I operate on my own server. I use it to prepare, review and publish Pins to my own Pinterest account. It has no public registration and no accounts for third parties. This website only describes the tool; it does not use cookies, analytics, advertising or tracking.</p>
 
   <h2>3. Data from the Pinterest API</h2>
-  <p>The tool acts only on my own Pinterest account, using an OAuth 2.0 access token issued by Pinterest, and uses the scopes <code>boards:read</code>, <code>pins:read</code> and <code>pins:write</code>. It processes:</p>
+  <p>The tool acts only on my own Pinterest account, using an OAuth 2.0 access token issued by Pinterest, and uses the scopes <code>boards:read</code>, <code>boards:write</code>, <code>pins:read</code> and <code>pins:write</code>. Pinterest requires <code>boards:write</code> to create a Pin on a board; the tool never creates, edits or deletes boards. It processes:</p>
   <ul>
     <li><strong>OAuth tokens</strong> (access and refresh token) of my own account. They are stored encrypted on my own server and are used only to call the Pinterest API on my behalf.</li>
     <li><strong>Board names and IDs</strong> of my own boards, so that I can choose where a Pin is published.</li>
